@@ -1,0 +1,453 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Habbo Hotel Colors */
+  --color-habbo-blue-dark: #2c708f;
+  --color-habbo-blue: #325e7a;
+  --color-habbo-blue-light: #4a8aaa;
+
+  --color-habbo-red-dark: #a12d2d;
+  --color-habbo-red: #e03c3c;
+  --color-habbo-red-light: #f05454;
+
+  --color-habbo-green-dark: #2d8f5e;
+  --color-habbo-green: #3ce083;
+  --color-habbo-green-light: #54f07a;
+
+  --color-habbo-pink-dark: #8f2c6f;
+  --color-habbo-pink: #e03ca1;
+  --color-habbo-pink-light: #f054b3;
+
+  --color-habbo-purple-dark: #5e2d8f;
+  --color-habbo-purple: #833ce0;
+  --color-habbo-purple-light: #a154f0;
+
+  --color-habbo-yellow-dark: #d8c38c;
+  --color-habbo-yellow: #e59e0f;
+  --color-habbo-yellow-light: #f3c900;
+  --color-habbo-yellow-pale: #f2d673;
+
+  --color-habbo-cream: #ffffcc;
+  --color-habbo-orange: #e59e0f;
+
+  /* Font */
+  --font-family-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-habbo-blue-dark);
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAMUlEQVQoU2NkYGD4z0AEYBxVSBUwatEoJqgKRy0axQRV4ahFo5igKhy1aBQTVIUAAP0/Agwv7hV9AAAAAElFTkSuQmCC');
+    background-repeat: repeat;
+    color: #1f2937;
+    font-family: var(--font-family-sans);
+  }
+}
+
+@layer components {
+  .habbo-box {
+    border-radius: 1rem;
+    border-width: 4px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  }
+
+  .habbo-box-blue {
+    background-color: var(--color-habbo-blue);
+    border-color: var(--color-habbo-blue-dark);
+    border-radius: 1rem;
+    border-width: 4px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  }
+
+  .habbo-box-red {
+    background-color: var(--color-habbo-red);
+    border-color: var(--color-habbo-red-dark);
+    border-radius: 1rem;
+    border-width: 4px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  }
+
+  .habbo-box-green {
+    background-color: var(--color-habbo-green);
+    border-color: var(--color-habbo-green-dark);
+    border-radius: 1rem;
+    border-width: 4px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  }
+
+  .habbo-box-pink {
+    background-color: var(--color-habbo-pink);
+    border-color: var(--color-habbo-pink-dark);
+    border-radius: 1rem;
+    border-width: 4px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  }
+
+  .habbo-box-purple {
+    background-color: var(--color-habbo-purple);
+    border-color: var(--color-habbo-purple-dark);
+    border-radius: 1rem;
+    border-width: 4px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  }
+
+
+  .habbo-box-yellow {
+    background-color: var(--color-habbo-yellow);
+    border-color: var(--color-habbo-yellow-dark);
+    border-radius: 1rem;
+    border-width: 4px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  }
+
+  .habbo-box-cream {
+    background-color: var(--color-habbo-cream);
+    border-color: #ca8a04;
+    border-radius: 1rem;
+    border-width: 4px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  }
+
+  .habbo-btn {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 1.125rem;
+    transition-property: all;
+    transition-duration: 200ms;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  }
+
+  .habbo-btn:hover {
+    transform: scale(1.05);
+  }
+
+  .habbo-btn:active {
+    transform: scale(0.95);
+  }
+
+  .habbo-btn-primary {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 1.125rem;
+    transition-property: all;
+    transition-duration: 200ms;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    background-color: var(--color-habbo-yellow);
+    color: white;
+  }
+
+  .habbo-btn-primary:hover {
+    transform: scale(1.05);
+    background-color: var(--color-habbo-yellow-light);
+  }
+
+  .habbo-btn-primary:active {
+    transform: scale(0.95);
+  }
+
+  .habbo-btn-secondary {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 1.125rem;
+    transition-property: all;
+    transition-duration: 200ms;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    background-color: var(--color-habbo-blue);
+    color: white;
+  }
+
+  .habbo-btn-secondary:hover {
+    transform: scale(1.05);
+    background-color: var(--color-habbo-blue-light);
+  }
+
+  .habbo-btn-secondary:active {
+    transform: scale(0.95);
+  }
+
+  .habbo-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    filter: drop-shadow(0 4px 6px rgb(0 0 0 / 0.4));
+  }
+
+  @media (min-width: 768px) {
+    .habbo-heading {
+      font-size: 1.875rem;
+    }
+  }
+
+  .habbo-card {
+    background-color: rgb(255 255 255 / 0.95);
+    backdrop-filter: blur(12px);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+    border-width: 2px;
+    border-color: var(--color-habbo-yellow);
+  }
+
+  .habbo-card-hover {
+    @apply bg-habbo-cream border-2 border-habbo-blue-light rounded-xl transition-all;
+  }
+
+  .habbo-card-hover:hover {
+    @apply scale-105 border-habbo-blue shadow-lg;
+  }
+
+  .habbo-bg {
+    background-color: var(--color-habbo-blue-dark);
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAMUlEQVQoU2NkYGD4z0AEYBxVSBUwatEoJqgKRy0axQRV4ahFo5igKhy1aBQTVIUAAP0/Agwv7hV9AAAAAElFTkSuQmCC');
+    background-repeat: repeat;
+  }
+}
+
+@layer utilities {
+  .pixel-corners {
+    clip-path: polygon(0 8px, 8px 8px, 8px 0,
+        calc(100% - 8px) 0, calc(100% - 8px) 8px, 100% 8px,
+        100% calc(100% - 8px), calc(100% - 8px) calc(100% - 8px),
+        calc(100% - 8px) 100%, 8px 100%, 8px calc(100% - 8px),
+        0 calc(100% - 8px));
+  }
+
+  .text-habbo-blue {
+    color: var(--color-habbo-blue);
+  }
+
+  .text-habbo-blue-dark {
+    color: var(--color-habbo-blue-dark);
+  }
+
+  .text-habbo-red {
+    color: var(--color-habbo-red);
+  }
+
+  .text-habbo-red-dark {
+    color: var(--color-habbo-red-dark);
+  }
+
+  .text-habbo-green {
+    color: var(--color-habbo-green);
+  }
+
+  .text-habbo-green-dark {
+    color: var(--color-habbo-green-dark);
+  }
+
+  .text-habbo-pink {
+    color: var(--color-habbo-pink);
+  }
+
+  .text-habbo-pink-dark {
+    color: var(--color-habbo-pink-dark);
+  }
+
+  .text-habbo-purple {
+    color: var(--color-habbo-purple);
+  }
+
+  .text-habbo-purple-dark {
+    color: var(--color-habbo-purple-dark);
+  }
+
+  .text-habbo-yellow {
+    color: var(--color-habbo-yellow);
+  }
+
+  .text-habbo-yellow-light {
+    color: var(--color-habbo-yellow-light);
+  }
+
+  .bg-habbo-blue {
+    background-color: var(--color-habbo-blue);
+  }
+
+  .bg-habbo-blue-dark {
+    background-color: var(--color-habbo-blue-dark);
+  }
+
+  .bg-habbo-blue-light {
+    background-color: var(--color-habbo-blue-light);
+  }
+
+
+
+
+  .bg-habbo-red {
+    background-color: var(--color-habbo-red);
+  }
+
+  .bg-habbo-red-dark {
+    background-color: var(--color-habbo-red-dark);
+  }
+
+  .bg-habbo-red-light {
+    background-color: var(--color-habbo-red-light);
+  }
+
+
+  .bg-habbo-green {
+    background-color: var(--color-habbo-green);
+  }
+
+  .bg-habbo-green-dark {
+    background-color: var(--color-habbo-green-dark);
+  }
+
+  .bg-habbo-green-light {
+    background-color: var(--color-habbo-green-light);
+  }
+
+
+  .bg-habbo-pink {
+    background-color: var(--color-habbo-pink);
+  }
+
+  .bg-habbo-pink-dark {
+    background-color: var(--color-habbo-pink-dark);
+  }
+
+  .bg-habbo-pink-light {
+    background-color: var(--color-habbo-pink-light);
+  }
+
+  .bg-habbo-purple {
+    background-color: var(--color-habbo-purple);
+  }
+
+  .bg-habbo-purple-dark {
+    background-color: var(--color-habbo-purple-dark);
+  }
+
+  .bg-habbo-purple-light {
+    background-color: var(--color-habbo-purple-light);
+  }
+
+
+  .bg-habbo-yellow {
+    background-color: var(--color-habbo-yellow);
+  }
+
+  .bg-habbo-yellow-light {
+    background-color: var(--color-habbo-yellow-light);
+  }
+
+  .bg-habbo-cream {
+    background-color: var(--color-habbo-cream);
+  }
+
+  .bg-habbo-orange {
+    background-color: var(--color-habbo-orange);
+  }
+
+  .border-habbo-blue {
+    border-color: var(--color-habbo-blue);
+  }
+
+  .border-habbo-blue-dark {
+    border-color: var(--color-habbo-blue-dark);
+  }
+
+
+
+  .border-habbo-red {
+    border-color: var(--color-habbo-red);
+  }
+
+  .border-habbo-red-dark {
+    border-color: var(--color-habbo-red-dark);
+  }
+
+  .border-habbo-green {
+    border-color: var(--color-habbo-green);
+  }
+
+  .border-habbo-green-dark {
+    border-color: var(--color-habbo-green-dark);
+  }
+
+  .border-habbo-pink {
+    border-color: var(--color-habbo-pink);
+  }
+
+  .border-habbo-pink-dark {
+    border-color: var(--color-habbo-pink-dark);
+  }
+
+  .border-habbo-purple {
+    border-color: var(--color-habbo-purple);
+  }
+
+  .border-habbo-purple-dark {
+    border-color: var(--color-habbo-purple-dark);
+  }
+
+
+
+
+
+  .border-habbo-yellow {
+    border-color: var(--color-habbo-yellow);
+  }
+
+  .border-habbo-yellow-dark {
+    border-color: var(--color-habbo-yellow-dark);
+  }
+
+
+
+
+  .hover\:bg-habbo-blue-light:hover {
+    background-color: var(--color-habbo-blue-light);
+  }
+
+  .hover\:bg-habbo-red-light:hover {
+    background-color: var(--color-habbo-red-light);
+  }
+
+  .hover\:bg-habbo-green-light:hover {
+    background-color: var(--color-habbo-green-light);
+  }
+
+  .hover\:bg-habbo-pink-light:hover {
+    background-color: var(--color-habbo-pink-light);
+  }
+
+  .hover\:bg-habbo-purple-light:hover {
+    background-color: var(--color-habbo-purple-light);
+  }
+
+  .hover\:bg-habbo-yellow-light:hover {
+    background-color: var(--color-habbo-yellow-light);
+  }
+
+  .hover\:border-habbo-yellow-light:hover {
+    border-color: var(--color-habbo-yellow-light);
+  }
+
+  .hover\:text-habbo-yellow:hover {
+    color: var(--color-habbo-yellow);
+  }
+}
